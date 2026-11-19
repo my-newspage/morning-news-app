@@ -1,0 +1,115 @@
+{
+  "updated_at": "2026-11-19 13:30",
+  "articles": [
+    {
+      "id": "5118a1f6a19ed8062a",
+      "date": "2026-11-19",
+      "category": "日経平均",
+      "title": "18日の日経平均は59,024.28円、163.85円高",
+      "summary": "18日の終値は前日比0.28％高。値下がり銘柄は値上がり銘柄を上回り、指数の上昇と市場全体の温度差がある。",
+      "impact": "指数だけでなく業種と値上がり銘柄の広がりも確認したい。",
+      "url": "https://s.kabutan.jp/news/n202611180919/",
+      "source": "株探",
+      "published": "2026-11-18 15:32"
+    },
+    {
+      "id": "245474fa9b897abc1b",
+      "date": "2026-11-19",
+      "category": "日経平均",
+      "title": "19日午前の日本株は上下に振れる",
+      "summary": "米ハイテク株先物の上昇を背景に日経平均が前日を上回る場面があったが、その後は下げに転じた。午前時点の動きで、終値ではない。",
+      "impact": "前日の反発が続くか、引け後の終値で確認したい。",
+      "url": "https://trust.sbishinseibank.co.jp/sp/market_news/",
+      "source": "SBI新生銀行・NQN",
+      "published": "2026-11-19 10:39"
+    },
+    {
+      "id": "267a9a976f95aeb9ff",
+      "date": "2026-11-19",
+      "category": "不動産",
+      "title": "自由が丘駅前再開発の賃貸住宅区画に三菱地所系が参画",
+      "summary": "JIYUGAOKA MUSE SQUAREの高層部賃貸住宅170戸について、商品企画と賃貸運営のパートナーとして参画した。",
+      "impact": "駅前の住宅需要と賃料設定、商業施設との相乗効果が焦点。",
+      "url": "https://prtimes.jp/main/html/rd/p/000000222.000102049.html",
+      "source": "三菱地所リアルエステートサービス",
+      "published": "2026-11-19 13:00"
+    },
+    {
+      "id": "9af0f46dfe79138578",
+      "date": "2026-11-19",
+      "category": "不動産",
+      "title": "西新宿三丁目西地区の再開発、施工者を決定",
+      "summary": "住宅、店舗、事務所などを含む4棟、総延べ約37.7万㎡の計画。2028年度の建設着手、2035年度完成を目指す。",
+      "impact": "新宿周辺の住宅供給と街の機能更新に長期の影響がある。",
+      "url": "https://www.decn.co.jp/?p=189477",
+      "source": "日刊建設工業新聞",
+      "published": "2026-11-19 06:00"
+    },
+    {
+      "id": "e4c7f22fd7b64637dc",
+      "date": "2026-11-19",
+      "category": "世界情勢",
+      "title": "米サウジ原子力協定案、IAEAが査察規定を評価",
+      "summary": "IAEA事務局長は査察規定を評価した。協定案は米議会の承認前で、濃縮・再処理を禁じていない点への懸念もある。",
+      "impact": "エネルギー協力と核不拡散の両面で今後の議会審議に注目。",
+      "url": "https://www.reuters.com/jp/world/security/ITOZMAGP3RI3VMQIJHD43S6E4U-2026-11-19/",
+      "source": "Reuters",
+      "published": "2026-11-19 10:59"
+    },
+    {
+      "id": "1bd19fb6813ab53dc0",
+      "date": "2026-11-19",
+      "category": "世界情勢",
+      "title": "APECを巡る欧州の地政学的な立場を論評",
+      "summary": "Reutersのコラムは、中国でのAPECに米中露の首脳が集まる一方、欧州の影響力が見えにくいと論じた。事実報道ではなく論評。",
+      "impact": "貿易と外交の交渉力を考える材料になる。",
+      "url": "https://www.reuters.com/jp/opinion/NZWRWX2BGRJBLCEUGPZUB3KGAU-2026-11-19/",
+      "source": "Reuters（コラム）",
+      "published": "2026-11-19 12:17"
+    },
+    {
+      "id": "68bc54214ee8b6bf63",
+      "date": "2026-11-19",
+      "category": "金融市場",
+      "title": "植田日銀総裁、利上げ後も金融環境は緩和的との見方",
+      "summary": "植田総裁は19日の国会で、金融環境は引き続き経済活動を支えていると述べ、個人消費は底堅いとの認識を示した。",
+      "impact": "今後の利上げ観測と住宅ローン金利への波及に注目。",
+      "url": "https://www.reuters.com/jp/economy/bank-of-japan/AWMX3MNZRBJLDF3FJLIGD7MBQE-2026-11-19/",
+      "source": "Reuters",
+      "published": "2026-11-19 10:29"
+    },
+    {
+      "id": "245474fa9b897abc1b",
+      "date": "2026-11-19",
+      "category": "金融市場",
+      "title": "19日午前10時の円相場は1ドル159円42〜44銭",
+      "summary": "前日17時比で8銭の円安・ドル高。株価の変動を受け、円売りの勢いも変化した。時点を限定した相場情報。",
+      "impact": "輸入コストや訪日需要に関係するため、午後の動きも確認したい。",
+      "url": "https://trust.sbishinseibank.co.jp/sp/market_news/",
+      "source": "SBI新生銀行・NQN",
+      "published": "2026-11-19 10:39"
+    },
+    {
+      "id": "a40248ff42da11f72b",
+      "date": "2026-11-19",
+      "category": "ファッション",
+      "title": "大手百貨店の26年度業績は増収増益基調との見通し",
+      "summary": "国内客の売上が堅調で、インバウンドも回復。繊研新聞は通期業績が増収増益になる見通しと報じた。",
+      "impact": "高価格帯の需要や接客型小売の動向を測る材料。",
+      "url": "https://senken.co.jp/",
+      "source": "繊研新聞",
+      "published": "2026-11-19 09:00"
+    },
+    {
+      "id": "736f9b8507d7c7beac",
+      "date": "2026-11-19",
+      "category": "ファッション",
+      "title": "ヤマトインターナショナルがアパレル企業を買収へ",
+      "summary": "18日に27億円でMCP37の全株式取得を発表。同社傘下のギャラリー・ド・ポップのブランドを取り込む予定。",
+      "impact": "販路とブランドの統合効果、12月の実行を確認したい。",
+      "url": "https://www.media-ir.com/news/?p=188800",
+      "source": "日本インタビュ新聞",
+      "published": "2026-11-19 07:29"
+    }
+  ]
+}
