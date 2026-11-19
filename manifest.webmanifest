@@ -1,0 +1,18 @@
+{
+  "name": "朝のニュース",
+  "short_name": "朝のニュース",
+  "description": "毎朝の経済・不動産・世界情勢・金融・ファッションニュース",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f6fa",
+  "theme_color": "#101a2c",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
