@@ -1,0 +1,26 @@
+{
+  "rail_updated_at": "2026-11-20 13:25",
+  "rail": {
+    "yokohama": {
+      "status": "平常運転",
+      "source": "https://traininfo.jreast.co.jp/train_info/line.aspx?gid=1&lineid=yokohamaline"
+    },
+    "toyoko": {
+      "status": "公式情報を確認",
+      "source": "https://www.tokyu.co.jp/unten2/unten.html"
+    }
+  },
+  "rates_updated_at": "2026年11月",
+  "rates": {
+    "flat35": {
+      "percent": "3.810",
+      "conditions": "21〜35年・融資率9割以下・新機構団信付きの最頻金利",
+      "source": "https://www.simulation.jhf.go.jp/flat35/kinri/index.php/rates/top/"
+    },
+    "mufg": {
+      "percent": "1.195",
+      "conditions": "新規借入・ずーっと一律優遇コース適用金利",
+      "source": "https://www.bk.mufg.jp/kariru/jutaku/yuuguu/index.html"
+    }
+  }
+}
