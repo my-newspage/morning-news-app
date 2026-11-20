@@ -32,7 +32,7 @@ try:
   rail['yokohama']['status']='平常運転'
  elif any(term in section for term in ('遅延','運転見合わせ','運休')):
   rail['yokohama']['status']='運行に影響あり'
-  rail['yokohama']['detail']=re.sub(r'\\s+',' ',section).strip()[:140]
+  rail['yokohama']['detail']=re.sub(r'\s+',' ',section).strip()[:140]
 except Exception as error: print('JR fetch failed:',error)
 # Tokyu renders route status through JavaScript; link to official live information.
 data['rail']=rail
@@ -42,4 +42,4 @@ month=now.strftime('%Y年%m月').replace('年0','年')
 if data.get('rates_updated_at')!=month:
  data['rates']={}
  data['rates_updated_at']='当月の金利は未確認'
-PATH.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\\n',encoding='utf-8')
+PATH.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
