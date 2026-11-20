@@ -22,5 +22,19 @@
       "conditions": "新規借入・ずーっと一律優遇コース適用金利",
       "source": "https://www.bk.mufg.jp/kariru/jutaku/yuuguu/index.html"
     }
+  },
+  "market": {
+    "nikkei": {
+      "value": "56,600.26",
+      "change": "-2,843.95",
+      "time": "2026-11-20 13:33",
+      "source": "https://indexes.nikkei.co.jp/nkave/index/profile?cid=3&idx=nk225"
+    },
+    "usdjpy": {
+      "value": "159.22",
+      "change": "-0.48",
+      "time": "2026-11-20 13:17",
+      "source": "https://trust.sbishinseibank.co.jp/sp/market_rates/"
+    }
   }
 }
