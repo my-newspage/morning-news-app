@@ -48,7 +48,7 @@ if data.get('rates_updated_at')!=month:
 market=data.setdefault('market',{})
 try:
  text=fetch('https://indexes.nikkei.co.jp/nkave/index/profile?cid=3&idx=nk225')
- match=re.search(r'日経平均株価\s+([0-9,]+\.[0-9]{2})\s+([+-]?[0-9.]+%)\s+([+-]?[0-9,]+\.[0-9]{2})\s+(20\d{2}\.\d{2}\.\d{2})\\((\d{2}:\d{2}|前引)\\)',text)
+ match=re.search(r'日経平均株価\s+([0-9,]+\.[0-9]{2})\s+([+-]?[0-9.]+%)\s+([+-]?[0-9,]+\.[0-9]{2})\s+(20\d{2}\.\d{2}\.\d{2})\((\d{2}:\d{2}|前引)\)',text)
  if match:
   value,_,change,date,time=match.groups()
   market['nikkei']={'value':value,'change':change,'time':date.replace('.','-')+' '+time,'source':'https://indexes.nikkei.co.jp/nkave/index/profile?cid=3&idx=nk225'}
