@@ -1,6 +1,131 @@
 {
-  "updated_at": "2026-11-23 09:49",
+  "updated_at": "2026-11-23 09:57",
   "articles": [
+    {
+      "id": "4402d7b22db748fdab",
+      "date": "2026-11-23",
+      "category": "ファッション",
+      "title": "アトリエ ミハラヤスヒロ、新しい革靴を発表。その美しい姿が確かめられるのは東京店だけ。",
+      "summary": "元記事で商品の詳細を確認してください。",
+      "url": "https://www.houyhnhnm.jp/news/1191355/",
+      "image": "https://www.houyhnhnm.jp/wp-content/uploads/2026/11/main-visual-1-700x394.jpg",
+      "source": "HOUYHNHNM",
+      "published": "2026-11-21 08:00",
+      "impact": "価格・発売日・在庫は元記事とブランド公式情報で確認してください。"
+    },
+    {
+      "id": "d7824d9ed62c048cd7",
+      "date": "2026-11-23",
+      "category": "ファッション",
+      "title": "温故知新な一足。ミズノからブラウンのスエードをまとったWAVE PROPHECY MOCが発売されます。",
+      "summary": "元記事で商品の詳細を確認してください。",
+      "url": "https://www.houyhnhnm.jp/news/1191208/",
+      "image": "https://www.houyhnhnm.jp/wp-content/uploads/2026/11/8.jpg",
+      "source": "HOUYHNHNM",
+      "published": "2026-11-20 13:37",
+      "impact": "価格・発売日・在庫は元記事とブランド公式情報で確認してください。"
+    },
+    {
+      "id": "1afe12d6df4f9d4430",
+      "date": "2026-11-23",
+      "category": "ファッション",
+      "title": "気鋭ショップ「マーズ」がヴジャデとコラボ、型から起こしたソフトなボストンバッグ発売",
+      "summary": "富ヶ谷のセレクトショップ「マーズ（Mars）」が、「ヴジャデ（Vuja Dé）」とのコラボレーションバッグを発売した。",
+      "url": "https://www.fashionsnap.com/article/2026-11-22/mars-vujade-bag/",
+      "image": "https://fashionsnap-assets.com/asset/format=auto,fit=crop,width=300,height=300/article/images/2026/11/750218b4-f0dd-41ae-9e06-441734b7a9f3.jpg",
+      "source": "FASHIONSNAP",
+      "published": "2026-11-22 15:00",
+      "impact": "価格・発売日・在庫は元記事とブランド公式情報で確認してください。"
+    },
+    {
+      "id": "4cb71f47c864618c69",
+      "date": "2026-11-23",
+      "category": "ファッション",
+      "title": "ニシモト イズ ザ マウスが石野卓球とコラボ　愛犬をあしらったTシャツを発売",
+      "summary": "西本克利が手掛ける「ニシモト イズ ザ マウス（NISHIMOTO IS THE MOUTH）」が、石野卓球とのコラボレーションTシャツを受注販売する。11月23日13時から29日23時59分まで、COMMON BASE公式オンラインストアで注文を受け付ける。",
+      "url": "https://www.fashionsnap.com/article/2026-11-22/nishimoto-isi-the-mouth-isino-takkyu/",
+      "image": "https://fashionsnap-assets.com/asset/format=auto,fit=crop,width=300,height=300/article/images/2026/11/aa19f507-fffa-4725-9793-381fc04f6bcb.jpg",
+      "source": "FASHIONSNAP",
+      "published": "2026-11-22 12:00",
+      "impact": "価格・発売日・在庫は元記事とブランド公式情報で確認してください。"
+    },
+    {
+      "id": "a676adf226e38a8c07",
+      "date": "2026-11-23",
+      "category": "金融市場",
+      "title": "米3大指数が調整局面入りしても押し目買いは「様子見」…ウォール街「触媒がない」 - BigGo ファイナンス",
+      "summary": "米3大指数が調整局面入りしても押し目買いは「様子見」…ウォール街「触媒がない」 BigGo ファイナンス",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBFVUNJM0dKMzRuMndvYWJySzROcWdUcWRhWTUtNkxXQ2x5Q0tjNnViOVkxVXpHVUFEV09hbWJKUVpTVElkbDZFMmltTzlad1pSaG8yM2pnUmZUdTRkUExnclYxNkpVU0lVLVA1ZldVbWM3LUhf?oc=5",
+      "source": "BigGo ファイナンス",
+      "published": "2026-11-23 09:35",
+      "impact": "詳細は出典で確認してください。"
+    },
+    {
+      "id": "67189b60536e95a4e3",
+      "date": "2026-11-23",
+      "category": "金融市場",
+      "title": "韓国電力株が3%安、株安に150万件の個人情報流出重なる - Chosunbiz",
+      "summary": "韓国電力株が3%安、株安に150万件の個人情報流出重なる Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOWW9NUmg5LUN1a1p0THBsYXF5bERKY1h6NTliQzZUR1J6WVphbjJvS2UyWG5hMEp2WEc5LUNOc3pJWEZGaUctNlBUa1VZRXloVWo4c25GVWNTTjNXa3lCOGlEVmFNNF80aDdDa0xlZzJTZ1BRUEtKa1hXT1ZHSlk3ZNIBlAFBVV95cUxNamNBQTFJdVdfWkZKdFZ1Z0RsLVdlcjFOLTNqQTBUdi0tXzkwcWh6d29wdzBXVE1IUVpnbFFidENfbVRUbGhCa3JmVFhTRXBBQXBjRXFDcFhTa0Zrc1VvZDFSdW1qM1VTRkV5dHJVSlBjRkFmNkJQVGtWeWFNZm91eEJCZmNBQ3Q1V0lUQmlUaEZxbGZF?oc=5",
+      "source": "Chosunbiz",
+      "published": "2026-11-23 09:32",
+      "impact": "詳細は出典で確認してください。"
+    },
+    {
+      "id": "78c8794464bfc39f24",
+      "date": "2026-11-23",
+      "category": "世界情勢",
+      "title": "プーチン政権の「記念碑」の橋、修復作業は長期化か…ウクライナ攻撃で一部崩落・ロシア軍の補給混乱 - 読売新聞",
+      "summary": "プーチン政権の「記念碑」の橋、修復作業は長期化か…ウクライナ攻撃で一部崩落・ロシア軍の補給混乱 読売新聞",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5vcUp5Yjc5ZllvTldhUDlGMmFPdGQxb0VOano4b1dkbklYN0pzSVZDOFJUTVVFcThhSm01cElkZk1KaFRnRXRoVmZENUt6YjNSTXZQbkxsdzdBQkh5ZTJhczBB?oc=5",
+      "source": "読売新聞",
+      "published": "2026-11-23 09:35",
+      "impact": "詳細は出典で確認してください。"
+    },
+    {
+      "id": "b0d532e2b921bd83a0",
+      "date": "2026-11-23",
+      "category": "世界情勢",
+      "title": "習主席・台湾代表との会談が実現しなかった高市首相…日本メディア「自ら孤立」と苦言 - Infoseek",
+      "summary": "習主席・台湾代表との会談が実現しなかった高市首相…日本メディア「自ら孤立」と苦言 Infoseek",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA4WkpzWldzSGlsWE5wWFIwc1NZXzBKVm5ucDVjaXJ2eU9oaTVuQ19aMk9uUnV2ZlVRNmVIbTVjOEZQOUJGN2dVSDFlX0FQZFRDSmRGeTVuWml2TGR0ZmFZMndIY1F3TlnSAWxBVV95cUxNYUxUcG5qazQ5Zlp5X0FsM2E2N28wZnJjc0MxYTVmcnZiM2tjamlMU1pQUFR3ZXhwMGZIeVV4bXJpdTdoQWJCS29NOXh4emNTenY1eWV2d1lmckRhOUZJN2Frd29VSllwRXRRWmM?oc=5",
+      "source": "Infoseek",
+      "published": "2026-11-23 09:29",
+      "impact": "詳細は出典で確認してください。"
+    },
+    {
+      "id": "5e0529b98638830d99",
+      "date": "2026-11-23",
+      "category": "不動産",
+      "title": "不動産開発の陰にある大問題…地面を掘れば出てくる遺跡や出土品、保管場所どうする - Infoseek",
+      "summary": "不動産開発の陰にある大問題…地面を掘れば出てくる遺跡や出土品、保管場所どうする Infoseek",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5welFidmhQdkhQZXJqbm1QS2xXa1ROR2tSb3RhRXlqdzVCRktmdUFWZ2ZWc1M5ODNOY3M3MlBZVGRfWEJMUVFrYmZJNWszTWU2OVhReXpXbV9sTXdaZ1JuOVVfRHc0d9IBa0FVX3lxTE0zZ0daZ2JzMDlrXzNOazFTSGNZWExjRjlMV000NmFkYVZ4bFZJSjVUUnNrMC1PYnVaSTZmNnFwY05sUGZRcVhWMnZQd29iZXRSRzdYdG1PTE5WQ1NCOFRleTh0QXVBVEZNTXZF?oc=5",
+      "source": "Infoseek",
+      "published": "2026-11-23 06:58",
+      "impact": "詳細は出典で確認してください。"
+    },
+    {
+      "id": "9937ba7122e0321cfd",
+      "date": "2026-11-23",
+      "category": "不動産",
+      "title": "中古住宅購入、建物の品質見極め 建物状況調査や瑕疵保険を確認 - 日本経済新聞",
+      "summary": "中古住宅購入、建物の品質見極め 建物状況調査や瑕疵保険を確認 日本経済新聞",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9hNE5oeUExWG5lZ0QzSHBLOUd5T1FTVjB3dnIybS1TNnpJeG5EeEh2U0hndFE0SWxqY2g4eUJuaThwMFdLdlJXTDVfY0UwNEg5QzZlSVV4bWM4M0ktbFpRaG5kVVN6aUdzZWpxbw?oc=5",
+      "source": "日本経済新聞",
+      "published": "2026-11-23 04:00",
+      "impact": "詳細は出典で確認してください。"
+    },
+    {
+      "id": "9f6dab9384dbe03b22",
+      "date": "2026-11-23",
+      "category": "不動産",
+      "title": "ソウルの住宅価格は上がるが、マイホーム購入に必要な期間はむしろ2年減ったという統計調査が出た。 昨年、ソウルの自家世帯の所得対比住宅価格比率（PIR）が前年より大幅に下がったという政府の調査結果が出た.. - 매일경제",
+      "summary": "ソウルの住宅価格は上がるが、マイホーム購入に必要な期間はむしろ2年減ったという統計調査が出た。 昨年、ソウルの自家世帯の所得対比住宅価格比率（PIR）が前年より大幅に下がったという政府の調査結果が出た.. 매일경제",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1idlJFNUk1WkZCVTNER1ZBb0J5T25xcDNzaDc1T3Z2aGZYYnpHVzlMMGZDXy1VcEI3bTg4Q0FVSU5Sd19WWF80bkNKcU9VOENOaUE?oc=5",
+      "source": "매일경제",
+      "published": "2026-11-22 11:07",
+      "impact": "詳細は出典で確認してください。"
+    },
     {
       "id": "0f33f0f78b64fbcd80",
       "date": "2026-11-23",
@@ -364,5 +489,18 @@
       "source": "日本インタビュ新聞",
       "published": "2026-11-19 07:29"
     }
-  ]
+  ],
+  "sales": [
+    {
+      "title": "ユニクロ感謝祭",
+      "summary": "11月20〜26日開催。メンズのヒートテック、フリースなどが対象。サイズ別在庫は公式ページで確認。",
+      "url": "https://www.uniqlo.com/jp/ja/special-feature/kanshasai"
+    },
+    {
+      "title": "GU感謝祭",
+      "summary": "11月20〜26日開催。メンズ冬物などがアプリ会員向け特価。価格・在庫は公式ページで確認。",
+      "url": "https://www.gu-global.com/jp/ja/feature/special/men?tagCategory=outer"
+    }
+  ],
+  "today_count": 11
 }
