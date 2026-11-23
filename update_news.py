@@ -42,7 +42,7 @@ def fashion_articles():
             published = dt.datetime.fromisoformat(stamp).astimezone(JST)
             if NOW - published > dt.timedelta(days=7) or EXCLUDE.search(title):
                 continue
-            found.append(make_fashion(html.unescape(title), url, 'HOUYHNHNM', published, image, '元記事で商品の詳細を確認してください。'))
+            found.append(make_fashion(html.unescape(title), url, 'HOUYHNHNM', published, image, ''))
     except Exception as exc:
         print(f'Fashion source error HOUYHNHNM: {exc}')
     try:
@@ -71,6 +71,20 @@ def make_fashion(title, url, source, published, image, summary):
             'category': 'ファッション', 'title': title, 'summary': summary, 'url': url,
             'image': image, 'source': source, 'published': published.strftime('%Y-%m-%d %H:%M'),
             'impact': '価格・発売日・在庫は元記事とブランド公式情報で確認してください。'}
+
+def article_summary(article):
+    if article['source'] != 'HOUYHNHNM':
+        return
+    try:
+        page = get(article['url']).decode('utf-8', 'ignore')
+        match = re.search(r'<meta\s+name="description"[^>]+content="([\s\S]*?)"\s*/?>', page)
+        if match:
+            excerpt = re.sub(r'\s+', ' ', html.unescape(match.group(1))).strip()
+            article['summary'] = excerpt[:180] + ('…' if len(excerpt) > 180 else '')
+    except Exception as exc:
+        print(f'Article summary error {article["url"]}: {exc}')
+    if not article['summary']:
+        article['summary'] = '商品の詳細は元記事をご覧ください。'
 
 def parse(item, category, pattern):
     title = html.unescape(item.findtext('title') or '').strip()
@@ -128,6 +142,7 @@ for lane, quota, pattern in [
         if article['id'] in seen or not re.search(pattern, article['title'], re.I):
             continue
         new.append(article)
+        article_summary(article)
         seen.add(article['id'])
         count += 1
         if count >= quota:
