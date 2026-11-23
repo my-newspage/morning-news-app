@@ -16,9 +16,9 @@ NOW = dt.datetime.now(JST)
 PATH = ROOT / 'data/news.json'
 EXCLUDE = re.compile(r'クイズ|占い|ランキング|まとめ|一覧|求人|レディース|ウィメンズ|女性限定|婦人服|写真\d+/\d+', re.I)
 LANES = [
-    ('金融市場', '', '(日銀 OR FRB OR 金利 OR 株式市場 OR 債券市場) when:2d', 2, ''),
-    ('世界情勢', '', '(国際情勢 OR 世界経済 OR 外交 OR ウクライナ OR 気候会議) when:2d', 2, ''),
-    ('不動産', '', '不動産 (住宅 OR マンション OR 再開発 OR 中古 OR 地価) (発表 OR 調査) when:4d', 3, ''),
+    ('金融市場', '', '(日銀 OR FRB OR 金利 OR 株式市場 OR 債券市場) (site:reuters.com OR site:nikkei.com OR site:boj.or.jp) when:3d', 2, ''),
+    ('世界情勢', '', '(国際情勢 OR 世界経済 OR 外交 OR ウクライナ OR 気候会議) (site:reuters.com OR site:nhk.or.jp) when:3d', 2, ''),
+    ('不動産', '', '(住宅 OR マンション OR 再開発 OR 地価) site:re-port.net when:5d', 3, ''),
 ]
 
 def get(url):
@@ -79,6 +79,23 @@ def parse(item, category, pattern):
     publisher = source.text.strip() if source is not None and source.text else 'Google News RSS'
     if not title or not link or EXCLUDE.search(title):
         return None
+    topic = title.rsplit(' - ', 1)[0]
+    required = {
+        '金融市場': r'株|金利|銀行|為替|円相場|FRB|日銀|債券|市場|インフレ|投資',
+        '世界情勢': r'戦争|外交|政府|首脳|国連|気候|COP|ウクライナ|ロシア|イラン|紛争|安全保障',
+        '不動産': r'住宅|マンション|賃貸|地価|再開発|オフィス|用地|戸建|物流施設',
+    }
+    if category in required and not re.search(required[category], topic, re.I):
+        return None
+    if category == '世界情勢' and re.search(r'スポーツ|Ｗ杯|W杯|サッカー|スキー', topic, re.I):
+        return None
+    allowed = {
+        '金融市場': ('Reuters', 'ロイター', '日本経済新聞', '日本銀行'),
+        '世界情勢': ('Reuters', 'ロイター', 'NHK'),
+        '不動産': ('R.E.port', '不動産流通研究所'),
+    }
+    if category in allowed and not any(name.lower() in publisher.lower() for name in allowed[category]):
+        return None
     try:
         published = email.utils.parsedate_to_datetime(item.findtext('pubDate')).astimezone(JST)
     except (TypeError, ValueError):
@@ -99,7 +116,7 @@ try:
     old = json.loads(PATH.read_text(encoding='utf-8')).get('articles', [])
 except (FileNotFoundError, ValueError):
     old = []
-seen = {a['id'] for a in old}
+seen = {a['id'] for a in old if a.get('date') != NOW.date().isoformat()}
 new = []
 fashion = fashion_articles()
 for lane, quota, pattern in [
@@ -133,7 +150,7 @@ for category, lane, query, quota, pattern in LANES:
             break
 
 cutoff = (NOW.date() - dt.timedelta(days=60)).isoformat()
-articles = new + [a for a in old if a.get('date', '') >= cutoff]
+articles = new + [a for a in old if cutoff <= a.get('date', '') < NOW.date().isoformat()]
 sales = []
 if dt.date(2026, 11, 20) <= NOW.date() <= dt.date(2026, 11, 26):
     sales = [
