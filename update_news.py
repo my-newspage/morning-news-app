@@ -64,6 +64,31 @@ def fashion_articles():
             found.append(make_fashion(title, url, 'FASHIONSNAP', published, match.group(1), summary))
     except Exception as exc:
         print(f'Fashion source error FASHIONSNAP: {exc}')
+    # Additional editorial feeds, with links to each publisher's own article.
+    for source, url in [('HYPEBEAST Japan','https://hypebeast.com/jp/feed'),
+                        ('Mastered','https://mastered.jp/feed/')]:
+        try:
+            items = ET.fromstring(get(url)).findall('./channel/item')
+            for item in items[:80]:
+                title = html.unescape(item.findtext('title') or '').strip()
+                link = (item.findtext('link') or '').strip()
+                if not title or not link or EXCLUDE.search(title):
+                    continue
+                try:
+                    published = email.utils.parsedate_to_datetime(item.findtext('pubDate')).astimezone(JST)
+                except (TypeError,ValueError):
+                    continue
+                if published > NOW + dt.timedelta(hours=1) or NOW-published > dt.timedelta(days=7):
+                    continue
+                description = html.unescape(item.findtext('description') or '')
+                summary = re.sub(r'\s+', ' ', re.sub('<[^>]+>', ' ', description)).strip()[:180]
+                media = item.find('{http://search.yahoo.com/mrss/}content')
+                enclosure = item.find('enclosure')
+                match = re.search(r'<img[^>]+src="([^"]+)',description)
+                image = (media.get('url') if media is not None else '') or (enclosure.get('url') if enclosure is not None else '') or (match.group(1) if match else '')
+                found.append(make_fashion(title,link,source,published,image,summary))
+        except Exception as exc:
+            print(f'Fashion source error {source}: {exc}')
     return sorted(found, key=lambda a: a['published'], reverse=True)
 
 def make_fashion(title, url, source, published, image, summary):
