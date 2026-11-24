@@ -1,12 +1,12 @@
 {
-  "rail_updated_at": "2026-11-24 08:57",
+  "rail_updated_at": "2026-11-24 09:52",
   "rail": {
     "yokohama": {
       "status": "情報を確認できません",
       "source": "https://traininfo.jreast.co.jp/train_info/line.aspx?gid=1&lineid=yokohamaline"
     },
     "toyoko": {
-      "status": "公式情報を確認",
+      "status": "情報を確認できません",
       "source": "https://www.tokyu.co.jp/unten2/unten.html"
     }
   },
@@ -31,9 +31,9 @@
       "source": "https://indexes.nikkei.co.jp/nkave/index/profile?cid=3&idx=nk225"
     },
     "usdjpy": {
-      "value": "158.95",
-      "change": "+0.01",
-      "time": "2026-11-24 08:51",
+      "value": "159.04",
+      "change": "+0.1",
+      "time": "2026-11-24 09:46",
       "source": "https://trust.sbishinseibank.co.jp/sp/market_rates/"
     }
   }
