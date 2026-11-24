@@ -23,18 +23,45 @@ try: data=json.loads(PATH.read_text(encoding='utf-8'))
 except (OSError,ValueError): data={}
 now=dt.datetime.now(JST)
 rail={'yokohama':{'status':'情報を確認できません','source':JR},
-      'toyoko':{'status':'公式情報を確認','source':TOKYU}}
+      'toyoko':{'status':'情報を確認できません','source':TOKYU}}
+YAHOO={'yokohama':'https://transit.yahoo.co.jp/diainfo/31/0',
+       'toyoko':'https://transit.yahoo.co.jp/diainfo/112/0'}
+def yahoo_status(url, now):
+ try:
+  page=fetch(url)
+  # Ignore the social post list: it can include old, unrelated, or contradictory reports.
+  main=page.split('この路線に関するつぶやき',1)[0].split('に関するつぶやき',1)[0]
+  m=re.search(r'(\d{1,2})月(\d{1,2})日\s*(\d{1,2})時(\d{1,2})分更新',main)
+  if not m: return None
+  month,day,hour,minute=map(int,m.groups())
+  stamp=now.replace(month=month,day=day,hour=hour,minute=minute,second=0,microsecond=0)
+  if stamp>now+dt.timedelta(minutes=5): stamp=stamp.replace(year=now.year-1)
+  if now-stamp>dt.timedelta(hours=3): return None
+  section=main[m.end():]
+  status=re.search(r'列車遅延|運転見合わせ|運休|ダイヤ乱れ|平常運転',section)
+  if not status: return None
+  label=status.group()
+  tail=section[status.end():].strip()
+  detail=re.split(r'（\d{1,2}月\d{1,2}日\s*\d{1,2}時\d{1,2}分掲載）',tail,1)[0]
+  detail=re.sub(r'\s+',' ',detail).strip()[:160]
+  if label=='平常運転': detail=''
+  return {'status':label,'detail':detail,'source':url,'source_name':'Yahoo!路線情報','source_updated_at':stamp.strftime('%Y-%m-%d %H:%M')}
+ except Exception as error:
+  print('Yahoo fetch failed:',url,error)
+  return None
+
+for key,url in YAHOO.items():
+ result=yahoo_status(url,now)
+ if result: rail[key]=result
+# An official JR disruption takes priority; never infer normal from an unscoped page.
 try:
  text=fetch(JR)
  section=text.split('運行情報・運休情報',2)[-1].split('振替輸送情報',1)[0]
- # Only mark normal when the live current-status section explicitly says so.
- if '平常運転' in section:
-  rail['yokohama']['status']='平常運転'
- elif any(term in section for term in ('遅延','運転見合わせ','運休')):
-  rail['yokohama']['status']='運行に影響あり'
-  rail['yokohama']['detail']=re.sub(r'\s+',' ',section).strip()[:140]
+ if rail['yokohama']['status']=='情報を確認できません' and '横浜線' in section and any(term in section for term in ('遅延','運転見合わせ','運休')):
+  rail['yokohama']={'status':'運行に影響あり','detail':re.sub(r'\\s+',' ',section).strip()[:140],
+                     'source':JR,'source_name':'JR東日本'}
 except Exception as error: print('JR fetch failed:',error)
-# Tokyu renders route status through JavaScript; link to official live information.
+# Tokyu route data is rendered through JavaScript; Yahoo status remains attributed to Yahoo.
 data['rail']=rail
 data['rail_updated_at']=now.strftime('%Y-%m-%d %H:%M')
 # Rates are month-specific; clear last month's rate rather than showing it as current.
