@@ -1,5 +1,5 @@
 {
-  "rail_updated_at": "2026-11-27 20:47",
+  "rail_updated_at": "2026-11-27 21:57",
   "rail": {
     "yokohama": {
       "status": "情報を確認できません",
@@ -31,9 +31,9 @@
       "source": "https://indexes.nikkei.co.jp/nkave/index/profile?cid=3&idx=nk225"
     },
     "usdjpy": {
-      "value": "159.45",
-      "change": "+0.19",
-      "time": "2026-11-27 20:41",
+      "value": "159.44",
+      "change": "+0.18",
+      "time": "2026-11-27 21:51",
       "source": "https://trust.sbishinseibank.co.jp/sp/market_rates/"
     }
   }
