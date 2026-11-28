@@ -1,5 +1,5 @@
 {
-  "rail_updated_at": "2026-11-28 14:49",
+  "rail_updated_at": "2026-11-28 15:54",
   "rail": {
     "yokohama": {
       "status": "情報を確認できません",
@@ -15,12 +15,14 @@
     "flat35": {
       "percent": "3.810",
       "conditions": "21〜35年・融資率9割以下・新機構団信付きの最頻金利",
-      "source": "https://www.simulation.jhf.go.jp/flat35/kinri/index.php/rates/top/"
+      "source": "https://www.simulation.jhf.go.jp/flat35/kinri/index.php/rates/top/",
+      "month": "2026年11月"
     },
     "mufg": {
       "percent": "1.195",
       "conditions": "新規借入・ずーっと一律優遇コース適用金利",
-      "source": "https://www.bk.mufg.jp/kariru/jutaku/yuuguu/index.html"
+      "source": "https://www.bk.mufg.jp/kariru/jutaku/yuuguu/index.html",
+      "month": "2026年11月"
     }
   },
   "market": {
